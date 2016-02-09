@@ -1,0 +1,33 @@
+<h1 align="center" style="padding-top:90px;">Fecha y Hora Actual en Ruby on Rails !</h1>
+
+<div align="center">
+
+	Hoy es:
+	<h3>
+		<%= 
+			Time.now.strftime("%d-%m-%Y")			
+		%>		
+	</h3>
+
+	Semana del Año 2016:
+	<h3>		
+		<%= 
+			Time.now.strftime("N° %V")
+		%>
+	</h3>
+
+	Hora de Captura:
+	<h3>
+		<%=
+			Time.now.strftime("%R")		
+		%>
+	</h3>
+
+	Zona Horaria:
+	<h3>
+		<%=
+			Time.now.strftime("%:z")		
+		%>
+	</h3>
+
+</div>
